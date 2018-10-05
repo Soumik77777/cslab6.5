@@ -3,37 +3,41 @@
 using namespace std;
 
 //input function
-int inputt(){
+int input(){
 	int x;
 	cout<<"Enter the numbers of shoes sold every week: ";
 	cin>>x;
 
-	return 0;}
+	return x;}
      
 	// function for 1st plan of salary
-float salary1(int s){
+float salary1(int x){
 	float sal=600.0;
 	return sal;
 }
      
 	// function for 2nd plan of salary
-float salary2(int s){
+float salary2(int x){
 	float sal;
-	sal=7*40.0+10*s*225/100.0;
+	sal=7*40.0+10*x*225/100.0;
 	return sal;
 }
      
 	//function for 3rd plan of salary
-float salary3(int s){
+float salary3(int x){
 	float sal;
-	sal=20.0*s+20*s*225/100.0;
+	sal=20.0*x+20*x*225/100.0;
 	return sal;
 }
      
 	//main function
 int main()
 	{
-
+	int p=input();
+	int salary1;
+	int salary2;
+	int salary3;
+		
 	if (salary1>salary2)
 		{
 		if (salary1>salary3)
