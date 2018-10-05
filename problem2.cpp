@@ -34,30 +34,30 @@ float salary3(int x){
 int main()
 	{
 	int p=input();
-	int salary1;
-	int salary2;
-	int salary3;
+	int a=salary1(p);
+	int b=salary2(p);
+	int c=salary3(p);
 		
-	if (salary1>salary2)
+	if (a>b)
 		{
-		if (salary1>salary3)
+		if (a>c)
 			{
-              		cout<<"First option is best with "<<salary1<<" salary per week";
+              		cout<<"First option is best with "<<a<<" salary per week";
 			}
           	else
 			{
-              		cout<<"Third option is best with "<<salary3<<" salary per week";
+              		cout<<"Third option is best with "<<c<<" salary per week";
 			}
 		}
      	else
 		{
-		if (salary2>salary3)
+		if (b>c)
 			{
-			cout<<"Second option is best with "<<salary2<<" salary per week";
+			cout<<"Second option is best with "<<b<<" salary per week";
 			}
 		else
 			{
-			cout<<"Third option is best with "<<salary3<<" salary per week";
+			cout<<"Third option is best with "<<c<<" salary per week";
 			}
 		}  
 return 0;
